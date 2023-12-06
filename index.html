@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Font Family -->
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Plus Jakarta Sans" rel="stylesheet"/>
+</head>
+<body>
+    <nav class="sticky top-0 bg-[rgba(0,0,0,0.5)] text-white flex px-32 py-4 items-center absolute w-full">
+        <!-- Bagian kiri -->
+        <div class="flex flex-1 gap-8">
+            <div class="flex text-xl font-bold tracking-widest">
+                <a class="flex" href="#">
+                    <i class="mx-3" data-feather="coffee"></i>
+                    <div style="font-family: Sacramento;">
+                        Coffee Shop
+                    </div>
+                </a>
+            </div>
+            <ul class="flex gap-8 flex-1 justify-center">
+                <li>
+                    <a class="hover:border-b hover:border-orange-500 pb-2 -mt-2" href="#">Home</a>
+                </li>
+                <li>
+                    <a class="hover:border-b hover:border-orange-500 pb-2 -mt-2" href="#">Product</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Bagian kanan -->
+        <div class="flex-1 flex justify-end">
+            <ul class="flex gap-5 items-center">
+                <li>
+                    <a href="#">
+                        <i data-feather="search"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i data-feather="shopping-cart"></i>
+                    </a>
+                </li>
+                <li>
+                    <button class="px-5 py-2 bg-transparent border border-white rounded-md">Sign In</button>
+                </li>
+                <li>
+                    <button class="px-5 py-2 bg-orange-500 border border-orange-500 rounded-md">Sign Out</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="h-screen flex -mt-20">
+        <!-- Bagian kiri -->
+        <div class="flex-1 bg-gradient-to-b from-gray-700 to-black flex justify-center items-center">
+            <div class="max-w-md text-white flex flex-col gap-7">
+                <h1 class="text-5xl">Start Your Day with Coffee and Good Meals</h1>
+                <p>We provide high quality beans, good taste, and healthy meals made by love just for you. Start your day with us for a bigger smile!</p>
+                <div>
+                    <button class="px-5 py-2 bg-orange-500 border border-orange-500 rounded-md">Get Started</button>
+                </div>
+                <div class="flex justify-between divide-x">
+                    <div class="flex flex-1 items-center flex-col">
+                        <div class="text-4xl text-orange-500">90+</div>
+                        <div>Staff</div>
+                    </div>
+                    <div class="flex flex-1 items-center flex-col">
+                        <div class="text-4xl text-orange-500">30+</div>
+                        <div>Stores</div>
+                    </div>
+                    <div class="flex flex-1 items-center flex-col">
+                        <div class="text-4xl text-orange-500">800+</div>
+                        <div>Customer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bagian kanan -->
+        <div class="flex-1 bg-[url('/assets/header-right.png')] bg-cover bg-no-repeat">
+        </div>
+    </header>
+
+    <section class="h-screen"></section>
+    <section class="h-screen"></section>
+    <section class="h-screen"></section>
+
+    <!-- CHAT MENGAMBANG -->
+    <div class="fixed bottom-10 right-10 bg-orange-500 w-20 h-20 rounded-full flex justify-center items-center">
+        <i class="text-white" style="width: 50px; height: 50px;" data-feather="message-circle"></i>
+    </div>
+
+    <!-- PEMANGGILAN ICON -->
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
