@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Font Family -->
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Plus Jakarta Sans" rel="stylesheet"/>
+</head>
+
+<body>
+    <section>
+        <div class="flex h-screen">
+            <!-- untuk gambar -->
+            <div class="bg-cover bg-no-repeat w-1/4 bg-[url('/assets/register.png')]"></div>
+
+            <!-- untuk bagian kanan -->
+            <div class="flex flex-1 flex-col justify-center items-center my-10">
+                <div class="flex flex-1 w-3/4 items-center">
+                    <img src="/assets/coffee.png" alt="Logo Coffee">
+                    <p style="font-family: Sacramento;" class="ml-2 text-xl text-yellow-800">Coffee Shop</p>
+                </div>
+
+                <div class="flex-1 w-3/4 items-center">
+                    <h1 class="text-xl text-yellow-800">Register</h1>
+                    <div class="mt-4 text-gray-600">Fill out the form correctly</div>
+                </div>
+
+                <form class="flex flex-col w-3/4 gap-4" action="">
+                    <div class="flex flex-col">
+                        <label class="font-semibold my-2" for="full-name">Full Name</label>
+                        <input class="h-11 border pl-5 rounded-md" type="text" name="full-name" placeholder="Enter Your Full Name" id="full-name">
+                        <img class="" src="/file/profile.png" alt="">
+                    </div>
+                    <div class="flex flex-col">
+                        <label class="font-semibold my-2" for="email">Email</label>
+                        <input class="h-12 border pl-5 rounded-md" type="email" name="email" placeholder="Enter Your Email" id="email">
+                        <img class="" src="/file/email.png" alt="">
+                    </div>
+                    <div class="flex flex-col">
+                        <label class="font-semibold my-2" for="password">Password</label>
+                        <input class="h-12 border pl-5 rounded-md" type="password" name="password" placeholder="Enter Your Password" id="password">
+                        <img class="" src="/file/password.png" alt="">
+                    </div>
+                    <div class="flex flex-col">
+                        <label class="font-semibold my-2" for="confirm-password">Confirm Password</label>
+                        <input class="h-12 border pl-5 rounded-md" type="password" name="confirm-password" placeholder="Enter Your Password Again" id="confirm-password">
+                        <img class="" src="/file/password.png" alt="">
+                    </div>
+                    <button class="px-5 py-2 bg-orange-500 border border-orange-500 rounded-md">Register</button>
+                </form>
+
+                <div class="my-6">
+                    <p class="text-gray-600">Have An Account? <a href="/login.html" class="text-orange-500">Login</a></p>
+                </div>
+
+                <div class="flex w-3/4 justify-between gap-4">
+                    <div class="flex-1 flex items-center justify-center border-white py-4 rounded-xl shadow-2xl">
+                        <img class="h-6 w-6" src="/assets/facebook.png" alt="">
+                        <button class="ml-4">Facebook</button>
+                    </div>
+                    <div class="flex-1 flex items-center justify-center border-white py-4 rounded-xl shadow-2xl">
+                        <img class="h-6 w-6" src="/assets/google.png" alt="">
+                        <button class="ml-4">Google</button>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
