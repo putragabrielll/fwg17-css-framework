@@ -97,10 +97,10 @@
                         <!-- Bagian tengah -->
                         <div class="flex-1 flex flex-col gap-4">
                             <div class="pt-2">
-                                <span class="px-2 py-2 bg-red-600 border border-red-600 text-white rounded-full">FLASH SALE!</span>
+                                <span class="px-1 py-1 bg-red-600 border border-red-600 text-white rounded-full">FLASH SALE!</span>
                             </div>
-                            <h1 class="text-3xl">Hazelnut Latte</h1>
-                            <div class="flex text-gray-600 gap-3 text-xl">
+                            <h1 class="text-2xl">Hazelnut Latte</h1>
+                            <div class="flex text-gray-600 gap-3 text-lg">
                                 <span>2 pcs</span>
                                 <span>|</span>
                                 <span>Reguler</span>
@@ -111,7 +111,7 @@
                             </div>
                             <div class="flex items-center gap-2">
                                 <del class="text-red-600 text-md">IDR 20.000</del>
-                                <span class="text-orange-500 text-2xl">IDR 10.000</span>
+                                <span class="text-orange-500 text-xl">IDR 10.000</span>
                             </div>
                         </div>
 
@@ -122,6 +122,7 @@
                             </button>
                         </div>
                     </div>
+
                     <div class="flex bg-gray-100 p-2 gap-4 pr-8">
                         
                         <!-- Bagian kiri -->
@@ -132,10 +133,10 @@
                         <!-- Bagian tengah -->
                         <div class="flex-1 flex flex-col gap-4">
                             <div class="pt-2">
-                                <span class="px-2 py-2 bg-red-600 border border-red-600 text-white rounded-full">FLASH SALE!</span>
+                                <span class="px-1 py-1 bg-red-600 border border-red-600 text-white rounded-full">FLASH SALE!</span>
                             </div>
-                            <h1 class="text-3xl">Hazelnut Latte</h1>
-                            <div class="flex text-gray-600 gap-3 text-xl">
+                            <h1 class="text-2xl">Hazelnut Latte</h1>
+                            <div class="flex text-gray-600 gap-3 text-lg">
                                 <span>2 pcs</span>
                                 <span>|</span>
                                 <span>Reguler</span>
@@ -146,7 +147,7 @@
                             </div>
                             <div class="flex items-center gap-2">
                                 <del class="text-red-600 text-md">IDR 20.000</del>
-                                <span class="text-orange-500 text-2xl">IDR 10.000</span>
+                                <span class="text-orange-500 text-xl">IDR 10.000</span>
                             </div>
                         </div>
 
@@ -157,14 +158,100 @@
                             </button>
                         </div>
                     </div>
+                    
                 </div>
             </div>
     
             <!-- Bagian kanan -->
-            <div class="flex-1">
-                <span class="text-xl">Total</span>
+            <div class="flex-1 flex flex-col gap-4">
+                <div class="flex-1 flex justify-start items-center">
+                    <span class="text-xl">Total</span>
+                </div>
+
+                <div class="flex-1 bg-gray-100 p-3 gap-4">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex justify-between">
+                            <span class="text-xl text-gray-600">Order</span>
+                            <span class="text-xl font-bold">Idr. 40.000</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-xl text-gray-600">Delivery</span>
+                            <span class="text-xl font-bold">Idr. 0</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-xl text-gray-600">Tax</span>
+                            <span class="text-xl font-bold">Idr. 4000</span>
+                        </div>
+                        <hr>
+                        <div class="flex justify-between">
+                            <span class="text-xl text-gray-600">Sub Total</span>
+                            <span class="text-xl font-bold">Idr.44.000</span>
+                        </div>
+                        <button class="px-5 py-2 bg-orange-500 border border-orange-500 rounded-md text-black" type="submit">Checkout</button>
+                        <span class="text-gray-500">We Accept</span>
+                        <div class="flex gap-2 justify-between">
+                            <div>
+                                <img src="/assets/Bank BRI.png" alt="">
+                            </div>
+                            <div>
+                                <img src="/assets/DANA.png" alt="">
+                            </div>
+                            <div>
+                                <img src="/assets/Bank BCA.png" alt="">
+                            </div>
+                            <div>
+                                <img src="/assets/GoPay.png" alt="">
+                            </div>
+                            <div>
+                                <img src="/assets/OVO.png" alt="">
+                            </div>
+                            <div>
+                                <img src="/assets/PayPal.png" alt="">
+                            </div>
+                        </div>
+                        <span class="text-gray-500">*Get Discount if you pay with Bank Central Asia</span>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <div class="flex-1 flex gap-2">
+            <!-- Bagian kiri -->
+            <div class="flex-1 flex flex-col gap-8">
+                <div class="flex-1">
+                    <h3 class="text-3xl">Payment Info & Delivery</h3>
+                </div>
+                <div class="flex-1 flex flex-col gap-6">
+                    <form class="flex flex-col gap-4" action="">
+                        <div class="flex flex-col">
+                            <label class="font-semibold my-2" for="email">Email</label>
+                            <input class="h-10 border pl-5 rounded-md" type="email" name="email" placeholder="Enter Your Email" id="email">
+                            <img class="" src="/file/email.png" alt="">
+                        </div>
+                        <div class="flex flex-col">
+                            <label class="font-semibold my-2" for="password">Full Name</label>
+                            <input class="h-10 border pl-5 rounded-md" type="text" name="password" placeholder="Enter Your Full Name" id="password">
+                            <img class="" src="/file/password.png" alt="">
+                        </div>
+                        <div class="flex flex-col">
+                            <label class="font-semibold my-2" for="confirm-password">Address</label>
+                            <input class="h-10 border pl-5 rounded-md" type="text" name="confirm-password" placeholder="Enter Your Address" id="confirm-password">
+                            <img class="" src="/file/password.png" alt="">
+                        </div>
+                    </form>
+                    <span class="font-extrabold text-lg">Delivery</span>
+                    <div class="flex justify-between">
+                        <button class="px-16 py-2 bg-transparent border border-orange-500 rounded-md">Dine in</button>
+                        <button class="px-16 py-2 bg-transparent border border-gray-200 rounded-md">Door Delivery</button>
+                        <button class="px-16 py-2 bg-transparent border border-gray-200 rounded-md">Pick Up</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian kanan -->
+            <div class="flex-1"></div>
+        </div>
+
     </div>
 
     <footer class="bg-[#F8F8F8]">
