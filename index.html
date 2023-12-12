@@ -19,48 +19,56 @@
 </head>
 <body>
     <!-- sticky -->
-    <nav class="top-0 bg-[rgba(0,0,0,0.5)] text-white flex flex-col md:flex-row px-32 py-4 items-center absolute w-full">
+    <nav class="top-0 bg-[rgba(0,0,0,0.5)] text-white flex flex-col md:flex-row px-20 md:px-32 py-4 items-center md:absolute w-full gap-6 md:gap-0">
         <!-- Bagian kiri -->
-        <div class="flex flex-1 gap-8">
-            <div class="flex text-xl font-bold tracking-widest">
+        <div class="flex flex-1 gap-8 w-full flex-col md:flex-row">
+            <div class="flex text-xl font-bold tracking-widest justify-between">
                 <a class="flex" href="#">
                     <i class="mx-3" data-feather="coffee"></i>
                     <div style="font-family: Sacramento;">
                         Coffee Shop
                     </div>
                 </a>
+                <ul class="flex gap-6 md:hidden">
+                    <li>
+                        <i data-feather="shopping-cart"></i>
+                    </li>
+                    <li>
+                        <i data-feather="menu"></i>  
+                    </li>
+                </ul>
             </div>
-            <ul class="flex gap-8 flex-1 justify-center">
-                <li>
+            <ul class="flex gap-8 flex-1 justify-center flex-col items-center md:items-start md:flex-row">
+                <li class="w-full md:w-auto">
                     <a class="hover:border-b hover:border-orange-500 pb-2 -mt-2" href="#">Home</a>
                 </li>
-                <li>
+                <li class="w-full md:w-auto ">
                     <a class="hover:border-b hover:border-orange-500 pb-2 -mt-2" href="product.html">Product</a>
                 </li>
             </ul>
         </div>
 
         <!-- Bagian kanan -->
-        <div class="flex-1 flex justify-end">
-            <ul class="flex gap-5 items-center">
-                <li>
+        <div class="flex-1 flex w-full">
+            <ul class="flex flex-col md:flex-row gap-5 md:justify-end items-center w-full">
+                <li class="w-full md:w-auto hidden md:block">
                     <a href="#">
                         <i data-feather="search"></i>
                     </a>
                 </li>
-                <li>
+                <li class="w-full md:w-auto hidden md:block">
                     <a href="#">
                         <i data-feather="shopping-cart"></i>
                     </a>
                 </li>
-                <li>
+                <li class="w-full md:w-auto">
                     <a href="login.html">
-                        <button class="px-5 py-2 bg-transparent border border-white rounded-md">Sign In</button>
+                        <button class="px-5 py-2 bg-transparent border border-white rounded-md w-full">Sign In</button>
                     </a>
                 </li>
-                <li>
+                <li class="w-full md:w-auto">
                     <a href="register.html">
-                        <button class="px-5 py-2 bg-orange-500 border border-orange-500 rounded-md">Sign Out</button>
+                        <button class="px-5 py-2 bg-orange-500 border border-orange-500 rounded-md w-full">Sign Out</button>
                     </a>
                 </li>
             </ul>
@@ -68,7 +76,7 @@
     </nav>
 
     <!-- -mt-20 -->
-    <header class="h-screen flex">
+    <header class="h-screen flex flex-col-reverse md:flex-row">
         <!-- Bagian kiri -->
         <section class="flex-1 bg-gradient-to-b from-gray-700 to-black flex justify-center items-center">
             <div class="max-w-md text-white flex flex-col gap-7">
@@ -95,7 +103,7 @@
         </section>
 
         <!-- Bagian kanan -->
-        <div class="flex-1 bg-[url('/assets/header-right.png')] bg-cover bg-no-repeat"></div>
+        <div class="flex-1 bg-[url('/assets/header-right.png')] bg-cover bg-no-repeat bg-center"></div>
     </header>
 
     <div class="flex">
@@ -311,7 +319,7 @@
         </div>
     </div>
 
-    <footer class="bg-[#F8F8F8]">
+    <!-- <footer class="bg-[#F8F8F8]">
         <div class="flex mx-36">
             <div class="flex my-16">
 
@@ -368,7 +376,7 @@
 
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <!-- CHAT MENGAMBANG -->
     <div class="fixed bottom-10 right-10 bg-orange-500 w-20 h-20 rounded-full flex justify-center items-center">
